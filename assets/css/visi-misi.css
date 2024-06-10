@@ -1,0 +1,90 @@
+
+.vision-mision {
+    font-family: 'Poppins', arial, serif;
+    padding: 50px;
+}
+
+.vision-mision h1 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.vision {
+    text-align: center;
+    margin-bottom: 5pc;
+}
+
+.vision h2 {
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.vision p {
+    color: black;
+    background-color: lightgray;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+}
+
+.mision {
+    text-align: center;
+}
+
+.mision-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mision h2 {
+    color: black;
+    padding-bottom: 15px;
+}
+
+.mision p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: lightgray;
+    width: 35%;
+    height: 8pc;
+    border-radius: 10px;
+    padding: 20px 15px 20px 15px;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: lightgray;
+    color: black;
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10px; 
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+    .mision-list {
+        flex-direction: column;
+    }
+
+    .mision p {
+        width: auto;
+    }
+}

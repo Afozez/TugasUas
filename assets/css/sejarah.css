@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', arial, serif;
+}
+
+.container-history h1 {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 50px 0px 50px 50px;
+}
+
+.history {
+    padding: 0px 200px 80px 50px;
+}
+
+.history p {
+    padding-bottom: 15px;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: lightgray;
+    color: black;
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10px; 
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+    .container-history h1 {
+        padding: 20px 20px;
+    }
+
+    .history {
+        padding: 0px 20px;
+        text-align: justify;
+    }
+}

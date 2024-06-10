@@ -1,0 +1,213 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 100px 0pc 100px;
+    padding-bottom: 10pc;
+    font-family: 'Poppins', arial, serif;
+}
+
+.sidebar {
+    width: 35%;
+}
+
+.profil-hmps {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+}
+
+.title-user {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin: 0px 10pc 20px 0px;
+    border-bottom: 5px solid #074173;
+}
+
+.title-user .fa {
+    font-size: 1.5em;
+    padding-right: 5px;
+}
+
+.title-user h1 {
+    color: black;
+    font-size: 1.5em;
+}
+
+.information {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+}
+
+.title-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin: 0px 10pc 20px 0px;
+    border-bottom: 5px solid #074173;
+}
+
+.title-info .fa {
+    font-size: 1.5em;
+    padding-right: 5px;
+}
+
+.title-info h1 {
+    color: black;
+    font-size: 1.5em;
+}
+
+.list-information {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.list-information a {
+    color: #0E46A3;
+    text-decoration: none   ;
+    padding-bottom: 15px;
+}
+
+.content {
+    background-color: white;
+    width: 63%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+}
+
+.card-articel {
+    padding: 30px;
+}
+
+.heading-news {
+    color: white;
+    font-size: 3em;
+    background-color: #265073;
+    padding: 30px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.card-articel h1 {
+    font-size: 2em;
+}
+
+.card-date {
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.container-next {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #074173;
+    width: 12.2pc;
+    height: 2.5pc;
+    gap: 5px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.next-news {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.container-next:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 0.2s;
+}
+
+.next-news:hover {
+    color: black;
+}
+
+.list-berita{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.list-berita p {
+    width: 40px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.list-berita p:hover {
+    background-color: #03AED2;
+}
+
+.list-berita a {
+    color: black;
+    text-decoration: none;
+}
+
+.list-berita-aktif {
+    background-color: #03AED2;
+    
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: lightgray;
+    color: black;
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10px; 
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 0;
+    }
+
+    .heading-news {
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 0;
+    }
+
+    .card-articel h1 {
+        font-size: 1.5em;
+    }
+
+    .card-articel img {
+        height: 250px;
+    }
+}

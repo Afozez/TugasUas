@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 8pc;
+    font-family: 'Poppins', arial, serif;
+    border-top: 30px solid #265073;
+    z-index: 1;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-logo-text {
+    padding-left: 5px;
+}
+
+.nav-logo-text-hmps {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.nav-logo-text-prodi {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.nav-logo-text-university {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item{
+    padding-left: 1.1pc;
+}
+
+.navbar-nav .nav-item a {
+    color: black;
+    font-weight: 600;
+    padding: 7px 10px 10px 10px;
+}
+
+.navbar-nav li a:hover {
+    color: black;
+}
+
+.dropdown-menu a {
+    color: white;
+    height: 40px;
+}
+
+.dropdown-item-top a:hover {
+    color: black !important;
+    background-color: lightgray;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown-item-center a:hover {
+    color: black !important;
+    background-color: lightgray;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown-item-bottom a:hover {
+    color: black !important;
+    background-color: lightgray;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.btn-daftar {
+    background-color: #265073;
+    width: 90px;
+    border: none;
+    margin-left: 50px;
+}
+
+.btn-daftar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-login {
+    background-color: rgb(0, 0, 0, 0);
+    width: 90px;
+    border: 2px solid #265073;
+    margin-left: 10px;
+}
+
+.btn-login a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-daftar:hover, .btn-login:hover, .btn-login a:hover {
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 6.5pc;
+    }
+
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .nav-logo-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-logo-text-hmps, .nav-logo-text-university {
+        font-size: 13px;
+    }
+
+    .nav-logo-text-prodi {
+        font-size: 1em;
+    }
+
+    .navbar {
+        z-index: 10;
+    }
+
+    .navbar-nav {
+        background-color: white;
+        width: 100%;
+        margin-top: 6.1px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0;
+    }
+
+    .btn-daftar, .btn-login {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        padding: 3px 0px;
+    }
+
+    .nav-item:hover {
+        background-color: gray;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+    .navbar {
+        height: 8pc;
+    }
+
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .nav-logo-img {
+        width: 80px;
+        height: 80px;
+        margin-top: -4px;
+    }
+
+    .nav-logo-text-hmps, .nav-logo-text-university {
+        font-size: 13px;
+    }
+
+    .nav-logo-text-prodi {
+        font-size: 1em;
+    }
+
+    .navbar {
+        z-index: 10;
+    }
+
+    .navbar-nav {
+        background-color: white;
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0;
+    }
+
+    .btn-daftar, .btn-login {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        padding: 3px 0px;
+    }
+
+    .nav-item:hover {
+        background-color: gray;
+    }
+
+}
