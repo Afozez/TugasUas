@@ -1,9 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "root": "TUGAS UAS BUAT WEB"
 }
 
 {
-  "root": "TUGAS UAS BUAT WEB"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
