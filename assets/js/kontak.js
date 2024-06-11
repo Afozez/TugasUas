@@ -1,12 +1,28 @@
-function contactValidation() {
-    const name = document.forms['send-email.php']['nama'].value;
-    const emails = document.forms['send-email.php']['email'].value;
-    const messege = document.forms['send-email.php']['message'].value;
+function contactForm() {
+    const names = document.forms['contact-form']['name'].value;
+    const emails = document.forms['contact-form']['email'].value;
+    const messege = document.forms['contact-form']['message'].value;
+    let succes = true;
 
-    if(name == "" || emails == "" || messege == "") {
-        document.getElementById('empty-name').innerHTML = "Wajib di isi";
+    if(names == "") {
+        document.getElementById('nameEror').innerHTML = "Wajib di isi";
         return false
-    } else {alert("Login Berhasil") }
+    }
+
+    if(emails == "") {
+        document.getElementById('emailEror').innerHTML = "Wajib di isi";
+        return false
+    }
+
+    if(messege == "") {
+        document.getElementById('messageEror').innerHTML = "Wajib di isi";
+        return false
+    }
+
+    if(succes) {
+      alert('Berhasil Di Kirim')
+    }
+
 
 } 
 

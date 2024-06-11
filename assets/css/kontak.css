@@ -78,14 +78,14 @@ main {
 }
 
 form  label {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 form input{
     width: 100%;
     height: 45px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 textarea {
@@ -95,12 +95,9 @@ textarea {
     /* padding-top: 3px; */
 }
 
-#empty-name, #empty-email, #empty-messege {
+#nameEror, #emailEror, #messageEror {
     font-size: 14px;
     color: red;
-    padding-bottom: 5px;
-    margin-top: -13px;
-    padding-left: 10px;
 }
 
 .btn-and-icon button {
