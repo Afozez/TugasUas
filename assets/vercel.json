@@ -1,9 +1,9 @@
 {
-  "root": "TUGAS UAS BUAT WEB"
-}
-
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
