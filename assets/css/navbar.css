@@ -131,17 +131,18 @@
 
 @media (max-width: 768px) {
     .navbar {
-        height: 6.7pc !important;
+        height: 6.8pc;
     }
 
 
     .navbar-brand {
         margin: 0;
+        margin-top: -3px;
     }
 
     .nav-logo-img {
-        width: 60px !important;
-        height: 60px !important;
+        width: 60px ;
+        height: 60px;
     }
 
     .nav-logo-text-hmps, .nav-logo-text-university {
@@ -160,59 +161,6 @@
         background-color: white;
         width: 100%;
         margin-top: 6.1px;
-    }
-
-    .navbar-nav .nav-item {
-        padding: 0;
-    }
-
-    .btn-daftar, .btn-login {
-        margin: 0;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        padding: 3px 0px;
-    }
-
-    .nav-item:hover {
-        background-color: gray;
-    }
-
-}
-
-/* Tablet */
-
-@media (max-width: 1024px) {
-    .navbar {
-        height: 8pc;
-    }
-
-
-    .navbar-brand {
-        margin: 0;
-    }
-
-    .nav-logo-img {
-        width: 80px;
-        height: 80px;
-        margin-top: -4px;
-    }
-
-    .nav-logo-text-hmps, .nav-logo-text-university {
-        font-size: 13px;
-    }
-
-    .nav-logo-text-prodi {
-        font-size: 1em;
-    }
-
-    .navbar {
-        z-index: 10;
-    }
-
-    .navbar-nav {
-        background-color: white;
-        width: 100%;
-        margin-top: 6px;
     }
 
     .navbar-nav .nav-item {
