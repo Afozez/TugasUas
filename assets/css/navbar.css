@@ -131,7 +131,7 @@
 
 @media (max-width: 768px) {
     .navbar {
-        height: 6.5pc;
+        height: 6.7pc !important;
     }
 
 
@@ -140,8 +140,8 @@
     }
 
     .nav-logo-img {
-        width: 50px;
-        height: 50px;
+        width: 60px !important;
+        height: 60px !important;
     }
 
     .nav-logo-text-hmps, .nav-logo-text-university {

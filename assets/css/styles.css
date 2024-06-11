@@ -163,11 +163,11 @@ main {
 
     /* Start Responsive Slider */
     .carousel-item {
-        height: 200px;
+        height: 250px !important;
     }
 
-    .carousel-item img {
-        height: 200px;
+    .slider-img {
+        height: 250px;
     }
 
     .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -222,12 +222,14 @@ main {
     }
 
     .news {
+        width: 200%;
         flex-direction: column;
         align-items: center;
+        margin-left: -50%;
     }
 
     .card-news {
-        width: 80%;
+        width: 100%;
         height: auto;
         margin-bottom: 20px;
     }
