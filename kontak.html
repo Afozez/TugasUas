@@ -37,8 +37,8 @@
         <!-- Start Section Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="home.html">
-                    <img src="assets/image/logo/img-hmps-logo.png" alt="Logo" width="30" height="24" class="nav-logo-img d-inline-block align-text-top">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/image/logo/img-hmps-logo.png" alt="Logo" class="nav-logo-img d-inline-block align-text-top">
                     <div class="nav-logo-text">
                         <div class="nav-logo-text-hmps">HMPS</div>
                         <div class="nav-logo-text-prodi">ILMU KOMPUTER</div> 
@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,15 +123,15 @@
             <div class="container-contact-form">
                 <h2>Contact Form</h2>
                 <div class="contact-form">
-                    <form action="send_email.php" method="post">
+                    <form action="kirim.php" method="post">
                         <label for="name">Nama</label><br>
-                        <input type="text" id="name" name="name"><br>
+                        <input type="text" id="name" name="name" required><br>
                         <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br>
+                        <input type="email" id="email" name="email" required><br>
                         <label for="message">Pesan</label><br>
-                        <textarea id="message" name="message"></textarea><br><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
                         <div class="btn-and-icon">
-                            <button class="btn-submit" onclick="contactValidation()" type="submit">Kirim</button>
+                            <button class="btn-submit" type="submit">Kirim</button>
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-instagram"></i>
                             <i class="fa fa-youtube"></i>
@@ -139,7 +139,7 @@
                             <i class="fa fa-twitter"></i>
                         </div>
                     </form>
-                
+                    
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.7824681055567!2d132.75731457315786!3d-5.608786355623809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d301ba4097d7dcb%3A0xe6c4dd0265e0adbc!2sUNINGRAT%20TUAL!5e1!3m2!1sid!2sid!4v1717310493948!5m2!1sid!2sid" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
