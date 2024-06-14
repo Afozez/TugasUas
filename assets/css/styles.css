@@ -158,6 +158,70 @@ main {
     background-color: grey;
 }
 
+/* Tablet 1024px */
+
+@media  (max-width: 1024px) {
+    /* Slider */
+    .carousel-item {
+        height: 370px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        margin: 0;
+        padding: 30px;
+        background-color: rgb(0, 0, 0, 0);
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon:hover {
+        border-radius: 50%;
+    }
+
+    /* About */
+    .container-about, .about {
+        margin: 10px 20px 30px 0px;
+        padding: 10px 0px 10px 20px;
+    }
+
+
+    .about-logo {
+        display: none;
+    }
+
+    /* news */
+
+    .container-news {
+        margin: 0px 40px;
+    }
+
+    .news {
+        flex-wrap: wrap;
+    }
+
+    .container-news {
+        padding: 0;
+    }
+
+    .card-news {
+        width: 49%;
+
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
+    /* Gaya CSS untuk layar sangat besar dalam mode landscape */
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .slider-img {
+        height: 100vh;
+    }
+
+    .card-news {
+        height: auto;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -200,6 +264,7 @@ main {
 
     .about-logo {
         order: 1;
+        display: block;
     }
 
     .about-logo {
@@ -213,7 +278,7 @@ main {
 
     /* Start Responsive News */
     .container-news {
-        padding: 0;
+        margin: 0;
     }
 
     .title-news {
@@ -224,14 +289,14 @@ main {
     .news {
         width: 90%;
         flex-wrap: wrap;
-        align-items: center;
+        margin: 0;
     }
 
     .card-news {
         width: 90%;
         height: auto;
         margin-bottom: 20px;
-        margin-left: 11.5%;
+        margin-left: 10%;
     }
     /* End Responsive News */
 }

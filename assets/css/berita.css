@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 100px 100px 0pc 100px;
-    padding-bottom: 10pc;
+    margin: 100px 100px 0 100px;
+    padding-bottom: 10%;
     font-family: 'Poppins', arial, serif;
 }
 
 .sidebar {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.profil-hmps {
+.profil-hmps, .information {
     background-color: white;
     padding: 30px;
     margin-bottom: 30px;
@@ -19,59 +22,27 @@
     box-shadow: 0px 3px 7px rgba(0,0,0,.25);
 }
 
-.title-user {
+.title-user, .title-info {
     display: flex;
     align-items: center;
     padding-bottom: 5px;
-    margin: 0px 10pc 20px 0px;
     border-bottom: 5px solid #074173;
 }
 
-.title-user .fa {
+.title-user .fa, .title-info .fa {
     font-size: 1.5em;
     padding-right: 5px;
 }
 
-.title-user h1 {
+.title-user h1, .title-info h1 {
     color: black;
     font-size: 1.5em;
-}
+} 
 
-.information {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
-}
-
-.title-info {
-    display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-    margin: 0px 10pc 20px 0px;
-    border-bottom: 5px solid #074173;
-}
-
-.title-info .fa {
-    font-size: 1.5em;
-    padding-right: 5px;
-}
-
-.title-info h1 {
-    color: black;
-    font-size: 1.5em;
-}
-
-.list-information {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-
-.list-information a {
+.list-information, .list-information a {
+    margin-top: 20px;
     color: #0E46A3;
-    text-decoration: none   ;
-    padding-bottom: 15px;
+    text-decoration: none;
 }
 
 .content {
@@ -90,7 +61,7 @@
     font-size: 3em;
     background-color: #265073;
     padding: 30px;
-    border-radius: 10px 10px 0px 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-articel h1 {
@@ -104,11 +75,10 @@
 
 .container-next {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #074173;
-    width: 12.2pc;
+    width: 12.2pc; /* Untuk ukuran yang lebih konsisten, sebaiknya gunakan ukuran absolut atau relatif yang jelas */
     height: 2.5pc;
     gap: 5px;
     margin-top: 30px;
@@ -131,7 +101,7 @@
     color: black;
 }
 
-.list-berita{
+.list-berita {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -140,7 +110,7 @@
 
 .list-berita p {
     width: 40px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0;
     border-radius: 5px;
     text-align: center;
     margin: 5px;
@@ -157,7 +127,6 @@
 
 .list-berita-aktif {
     background-color: #03AED2;
-    
 }
 
 #myBtn {
@@ -181,6 +150,46 @@
     background-color: grey;
 }
 
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 90%;
+        margin: 20px -10px 0px 40px ;
+    }
+
+    .profil-hmps, .information {
+        width: 90%;
+        
+    }
+
+    .title-user, .title-info {
+        margin: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .heading-news {
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 0;
+    }
+
+    .card-articel img {
+        height: 450px;
+    }
+}
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -189,6 +198,13 @@
 
     .sidebar {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profil-hmps, .information {
+        width: 80%;
     }
 
     .content {
