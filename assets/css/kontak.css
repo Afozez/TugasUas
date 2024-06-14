@@ -222,7 +222,6 @@ textarea {
     form input, textarea {
         width: 100% ;
         border: 1px solid black;
-        margin-right: 50% ;
     }
 
     .btn-and-icon {
@@ -230,11 +229,12 @@ textarea {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin: -30px 20% 0 0 ;
+        margin: -30px 0 0 0 ;
     }
 
     .btn-and-icon button {
         padding: 0px 10px 0px 10px;
+        margin: 0px 55px;
     }
 
     .btn-and-icon i {
@@ -245,5 +245,6 @@ textarea {
     .map {
         width: 330px;
         height: 330px;
+        margin-left: -35%;
     }
 }
