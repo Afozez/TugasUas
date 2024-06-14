@@ -5,23 +5,29 @@ function contactForm() {
     let succes = true;
 
     if(names == "") {
-        document.getElementById('nameEror').innerHTML = "Wajib di isi";
-        return false
+      document.getElementById('nameEror').innerHTML = "Wajib di isi";
+      return false
+    } else {
+      document.getElementById('nameEror').innerHTML = "";
     }
 
     if(emails == "") {
         document.getElementById('emailEror').innerHTML = "Wajib di isi";
         return false
+    } else {
+      document.getElementById('emailEror').innerHTML = "";
     }
 
     if(messege == "") {
         document.getElementById('messageEror').innerHTML = "Wajib di isi";
         return false
+    } else {
+      document.getElementById('messageEror').innerHTML = "";
     }
 
     if(succes) {
       alert('Berhasil Di Kirim')
-    }
+    } 
 
 
 } 
