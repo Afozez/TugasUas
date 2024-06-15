@@ -1,0 +1,27 @@
+untuk pengisian daftar mahasiswa di hmps ilmu computer posisinya berada ditengah memakai card
+1.nama
+2.alamat
+3.nomor hp (direct link wa)
+4.email
+5.semester
+6.alasan masuk di hmps
+ dibagian struktur
+dekan (garis putus-putus ketua)
+prodi (garis putuss-puutus ketua)
+dst
+
+dibagian logo jangan singkat kasih Panjang Universitas Doktor Husni Ingratubun Tual
+
+divisi harus ada kosentrasi
+1.Programmer
+2.CyberSecurity (belajar Linux)
+3.Data Sains(data analisis)
+4.komputer dasar 
+
+dibagian berita Ketika di klik cardnya berada ditengah pertama judul kedua gambar dan ketiga teksnya
+
+opsional dibagian gambar mahasiswa menggunakan PDH HPS
+
+dibagian social media hapus twitter dan X
+
+opsional kalau bisa pakai CRUD  JS
