@@ -17,3 +17,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$(document).ready(function() {
+  // Inisiasi AOS
+  AOS.init();
+  
+  // Tambahkan atau hapus kelas saat di-hover
+  $('.card-news').hover(
+    function() {
+      $(this).addClass('hover-scale');
+    }, function() {
+      $(this).removeClass('hover-scale');
+    }
+  );
+});
