@@ -2,18 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.php",
-      "use": "@vercel/php"
-    },
-    {
-      "src": "assets/image/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
     }
   ]
 }
