@@ -48,12 +48,20 @@
 .content {
     background-color: white;
     width: 63%;
+    height: auto;
+    padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 3px 7px rgba(0,0,0,.25);
 }
 
 .card-articel {
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.card-articel-update {
+    margin-bottom: 60px;
 }
 
 .heading-news {
@@ -64,8 +72,9 @@
     border-radius: 10px 10px 0 0;
 }
 
-.card-articel h1 {
+.card-articel-h1 {
     font-size: 2em;
+    font-weight: 700;
 }
 
 .card-date {
@@ -73,60 +82,37 @@
     padding-bottom: 20px;
 }
 
-.container-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #074173;
-    width: 12.2pc; /* Untuk ukuran yang lebih konsisten, sebaiknya gunakan ukuran absolut atau relatif yang jelas */
-    height: 2.5pc;
-    gap: 5px;
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
-.next-news {
+.btn-news-details {
     color: white;
-    text-decoration: none;
     font-size: 15px;
+    text-decoration: none;
+    background-color: #074173;
+    padding: 10px 15px;border-radius: 5px;
 }
 
-.container-next:hover {
+.btn-news-details:hover {
+    color: black;
     background-color: lightgray;
-    color: black;
-    transition: 0.2s;
-}
-
-.next-news:hover {
-    color: black;
 }
 
 .list-berita {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
-
 .list-berita p {
-    width: 40px;
-    padding: 10px 0;
-    border-radius: 5px;
-    text-align: center;
-    margin: 5px;
+    margin: 0 5px;
 }
-
-.list-berita p:hover {
-    background-color: #03AED2;
-}
-
 .list-berita a {
-    color: black;
     text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
-
-.list-berita-aktif {
-    background-color: #03AED2;
+.list-berita-aktif a {
+    background-color: #000;
+    color: #fff;
 }
 
 #myBtn {

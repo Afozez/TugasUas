@@ -3,8 +3,7 @@
     padding: 0;
 }
 
-
-.navbar {
+.container-navbar {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -145,7 +144,7 @@
 }
 
 @media (max-width: 1024px) {
-    .navbar {
+    .container-navbar {
         height: 8.4pc;
     }
 
@@ -177,7 +176,7 @@
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    .container-navbar {
         height: 6.8pc;
     }
 
@@ -200,7 +199,7 @@
         font-size: 1em;
     }
 
-    .navbar {
+    .conatiner-navbar {
         z-index: 10;
     }
 

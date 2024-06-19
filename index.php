@@ -6,10 +6,10 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+<?php include 'layout/web/head_web_hmps.php'; ?>
 </head>
 <body>
-    <?php include 'assets/includes/header.php'; ?>
+    <?php include 'layout/web/navbar_web_hmps.php'; ?>
     <main>
         <!-- Start Section Hero -->
         <div id="carouselExampleAutoplaying" class="con-slider carousel slide" data-bs-ride="carousel">
@@ -98,7 +98,7 @@ session_start();
     </main>
 
     <!-- Include footer.php -->
-    <?php include "assets/includes/footer.php"; ?>
+    <?php include "layout/web/footer_web_hmps.php"; ?>
 
 </body>
 </html>
