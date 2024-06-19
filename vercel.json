@@ -2,9 +2,7 @@
     "rewrites": [
       {
         "source": "/berita",
-        "destination": "/berita.php",
-        "source": "/kontak",
-        "destination": "/kontak.php"
+        "destination": "/berita.php"
       }
     ]
   }
