@@ -46,4 +46,5 @@ $koneksi->close();
 // Redirect kembali ke halaman tambah_berita.php
 header('Location: tambah_berita.php');
 exit;
+
 ?>

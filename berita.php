@@ -36,7 +36,7 @@
                     // Loop untuk menampilkan setiap berita
                     while($row = $result->fetch_assoc()) {
                         echo "<div class='card-articel-update'>";
-                        echo "<h1 style='font-weight: 600;'>" . $row['judul'] . "</h1>";
+                        echo "<h1>" . $row['judul'] . "</h1>";
                         echo "<i class='card-date'>" . date('d M Y', strtotime($row['tanggal'])) . "</i>";
                         echo "<img src='/tugasuas/uploads/" . $row['gambar'] . "' alt='gambar' style='width: 100%; height: auto;'>";
                         echo "<p>" . $row['ringkasan'] . "</p>";
