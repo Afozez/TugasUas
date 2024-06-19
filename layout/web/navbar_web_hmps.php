@@ -4,7 +4,7 @@
     <!-- Start Section Navbar -->
     <nav class="container-navbar navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.php">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="assets/image/logo/img-hmps-logo.png" alt="Logo" class="nav-logo-img d-inline-block align-text-top">
                 <div class="nav-logo-text">
                     <div class="nav-logo-text-hmps">HMPS</div>
@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
