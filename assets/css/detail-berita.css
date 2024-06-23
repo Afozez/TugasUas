@@ -1,0 +1,212 @@
+.main-content-detail-news {
+  font-family: Arial, 'Poppins', serif, arial;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container-detail-news {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-wrapper-detail {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-detail {
+  width: 400px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  overflow: hidden;
+}
+
+.container-latest-news h4 {
+  font-weight: bold;
+  padding: 0px 0px 15px 10px;
+}
+
+.latest-news a {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Prevent image overflow */
+  color: black;
+  text-decoration: none;
+}
+
+.latest-news:hover .news-image {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.news-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.news-title {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+.news-title:hover {
+  color: #265073;
+  cursor: pointer;
+}
+
+.card-article-detail {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.date-detail {
+  color: grey;
+}
+
+.card-article-detail h1 {
+  color: #265073;
+  font-weight: bold;
+  padding: 15px 0px 0px 0px ;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  margin-top: 10px;
+}
+
+.card-article-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-article-detail .article-title {
+  color: #265073;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-article-detail .article-content {
+  color: #333;
+  line-height: 1.6;
+}
+  
+
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: lightgray;
+    color: black;
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px;  
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: grey;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 90%;
+        margin: 20px -10px 0px 40px ;
+    }
+
+    .profil-hmps, .information {
+        width: 90%;
+        
+    }
+
+    .title-user, .title-info {
+        margin: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .heading-news {
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 0;
+    }
+
+    .card-articel img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profil-hmps, .information {
+        width: 80%;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 0;
+    }
+
+    .heading-news {
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 0;
+    }
+
+    .card-articel h1 {
+        font-size: 1.5em;
+    }
+
+    .card-articel img {
+        height: 250px;
+    }
+}

@@ -79,6 +79,7 @@ main {
 
 .news {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     position: relative;
     z-index: 20;
@@ -103,10 +104,12 @@ main {
     position: relative;
     overflow: hidden;
     background-color: white;
-    width: 35%;
-    margin-bottom: 50px;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    width: 32.7%;
     z-index: 20;
     transition: transform 0.3s ease, border 0.3s ease;
+    color: black;
 }
 
 .card-news:hover {
@@ -130,19 +133,26 @@ main {
     color: inherit;
 }
 
+.card-news-text p {
+    width: 100%; /* Sesuaikan lebar ini dengan kebutuhan Anda */
+    white-space: pre-wrap; /* Memastikan teks tidak terpotong di tengah kata */
+    overflow: hidden; /* Menyembunyikan bagian teks yang melampaui lebar elemen */
+    text-overflow: ellipsis; /* Menambahkan titik-titik di akhir teks yang terpotong */
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
 .card-news .card-news-text {
     padding: 10px;
 }
 
 .card-news .card-news-text h4 {
+    color: black;
+    font-weight: 800;
     margin: 10px 0;
 }
 
-.card-news .card-news-text p {
-    margin: 5px 0;
-}
-
-.card-news .card-news-text .date {
+.card-news .card-news-text .crad-date-home{
     font-size: 0.9em;
     color: #777;
 }

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <title>Struktur - HMPS Ilmu Komputer Uningrat Tual</title>
+    <?php include 'layout/web/head_web_hmps.php'; ?>
 </head>
 <body>
-    
-    <!-- Include header.php  -->
-    <?php include 'assets/includes/header.php'; ?>
+    <nav>
+        <!-- Include navbar  -->
+        <?php include 'layout/web/navbar_web_hmps.php'; ?>
+    </nav>
 
     <main>
         <div class="structure" style="padding: 50px 0px 50px 0px;">
@@ -15,7 +17,9 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     </main>
 
-    <!-- Include footer.php -->
-    <?php include "assets/includes/footer.php"; ?>
+    <footer>
+        <!-- Include footer.php -->
+        <?php include 'layout/web/footer_web_hmps.php'; ?>
+    </footer>
 </body>
 </html>

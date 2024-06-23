@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <title>Visi Misi - HMPS Ilmu Komputer Uningrat Tual</title>
+<?php include 'layout/web/head_web_hmps.php'; ?>
 </head>
 <body>
-    
-    <!-- Include header.php  -->
-    <?php include 'assets/includes/header.html'; ?>
+    <nav>
+        <!-- Include header.php  -->
+        <?php include 'layout/web/navbar_web_hmps.php'; ?>
+    </nav>
 
     <main>
         <!-- Start Visi Misi -->
@@ -33,7 +35,9 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     </main>
 
-    <!-- Include footer.php -->
-    <?php include "assets/includes/footer.php"; ?>
+    <footer>
+        <!-- Include footer.php -->
+        <?php include 'layout/web/footer_web_hmps.php'; ?>
+    </footer>
 </body>
 </html>

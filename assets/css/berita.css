@@ -1,215 +1,100 @@
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 100px 100px 0 100px;
-    padding-bottom: 10%;
-    font-family: 'Poppins', arial, serif;
+
+* {
+  font-family: Arial, 'Poppins', serif, arial;
+  margin: 0;
+  padding: 0;
 }
 
-.sidebar {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.main-wrapper-news {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 70px;
+  /* margin: 0px 50px; */
+  background-color: white;
 }
 
-.profil-hmps, .information {
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+.card-article-news {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px;
+  width: 700px;
+}
+.card-date-news {
+  color: gray;
 }
 
-.title-user, .title-info {
-    display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-    border-bottom: 5px solid #074173;
+.image-news {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
 }
 
-.title-user .fa, .title-info .fa {
-    font-size: 1.5em;
-    padding-right: 5px;
-}
-
-.title-user h1, .title-info h1 {
-    color: black;
-    font-size: 1.5em;
-} 
-
-.list-information, .list-information a {
-    margin-top: 20px;
-    color: #0E46A3;
-    text-decoration: none;
-}
-
-.content {
-    background-color: white;
-    width: 63%;
-    height: auto;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
-}
-
-.card-articel {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-}
-
-.card-articel-update {
-    margin-bottom: 60px;
-}
-
-.heading-news {
-    color: white;
-    font-size: 3em;
-    background-color: #265073;
-    padding: 30px;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-articel h1 {
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.card-date {
-    color: gray;
-    padding-bottom: 20px;
+.title-news {
+  color: #265073;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .btn-news-details {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    background-color: #074173;
-    padding: 10px 15px;border-radius: 5px;
+  background-color: #265073;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  margin-bottom: 50px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px; /* Tambahkan margin top agar terpisah dari konten */
 }
 
-.btn-news-details:hover {
-    color: black;
-    background-color: lightgray;
+.pagination p {
+  margin: 0; /* Hapus margin default pada <p> */
 }
 
-.list-berita {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.list-berita p {
-    margin: 0 5px;
-}
-.list-berita a {
-    text-decoration: none;
-    color: black;
-    padding: 5px 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
-.list-berita-aktif a {
-    background-color: #000;
-    color: #fff;
+.pagination-link,
+.pagination-arrow {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #265073; /* Warna border biru */
+  color: grey; /* Warna teks biru */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
 }
 
-#myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none;
-    outline: none; 
-    background-color: lightgray;
-    color: black;
-    cursor: pointer; 
-    width: 50px; 
-    height: 50px; 
-    border-radius: 10px; 
-    font-size: 18px;
-}
-  
-#myBtn:hover {
-    background-color: grey;
+.pagination-link:hover,
+.pagination-arrow:hover {
+  background-color: #265073; /* Warna background biru saat hover */
+  color: #fff; /* Warna teks putih saat hover */
 }
 
-@media (max-width: 1024px) {
-    .main {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 20px;
-    }
-
-    .sidebar {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        width: 90%;
-        margin: 20px -10px 0px 40px ;
-    }
-
-    .profil-hmps, .information {
-        width: 90%;
-        
-    }
-
-    .title-user, .title-info {
-        margin: 0;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .heading-news {
-        font-size: 2em;
-        font-weight: bold;
-        border-radius: 0;
-    }
-
-    .card-articel img {
-        height: 450px;
-    }
+.pagination-link.active {
+  background-color: #265073; /* Warna biru untuk halaman aktif */
+  color: white; /* Warna teks putih untuk halaman aktif */
 }
 
-@media (max-width: 768px) {
-    .main {
-        flex-direction: column;
-        margin: 0;
-    }
+.pagination-link:first-child,
+.pagination-link:last-child {
+  background-color: #265073; /* Warna biru untuk link pertama dan terakhir */
+  color: white; /* Warna teks hitam untuk link pertama dan terakhir */
+}
 
-    .sidebar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+.pagination-link:not(.active) {
+  background-color: #fff; /* Warna background putih untuk link non-aktif */
+  color: gray; /* Warna teks biru untuk link non-aktif */
+}
 
-    .profil-hmps, .information {
-        width: 80%;
-    }
+.sidebar-news {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    .content {
-        width: 100%;
-        margin-bottom: 30px;
-        border-radius: 0;
-    }
-
-    .heading-news {
-        font-size: 2em;
-        font-weight: bold;
-        border-radius: 0;
-    }
-
-    .card-articel h1 {
-        font-size: 1.5em;
-    }
-
-    .card-articel img {
-        height: 250px;
-    }
+.information {
+  width: 400px;
 }

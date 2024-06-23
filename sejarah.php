@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <title>Sejarah - HMPS Ilmu Komputer Uningrat Tuak</title>
+    <!-- Include header.php  -->
+    <?php include 'layout/web/head_web_hmps.php'; ?>
 </head>
 <body>
-   
-    <!-- Include header.php  -->
-    <?php include 'assets/includes/header.php'; ?>
+
+   <nav>
+    <?php include 'layout/web/navbar_web_hmps.php'; ?>
+   </nav>
 
     <main>
         <div class="container-history">
@@ -39,7 +42,9 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     </main>
 
-    <!-- Include footer.php -->
-    <?php include "assets/includes/footer.php"; ?>
+    <footer>
+        <!-- Include footer.php -->
+        <?php include 'layout/web/footer_web_hmps.php'; ?>
+    </footer>
 </body>
 </html>

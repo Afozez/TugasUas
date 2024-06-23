@@ -4,11 +4,11 @@ $username = "root";
 $password = "";
 $dbname = "news_portal";
 
-// Membuat koneksi
-$koneksi = new mysqli($servername, $username, $password, $dbname);
+// Buat koneksi baru
+$connec = new mysqli($servername, $username, $password, $dbname);
 
-// Mengecek koneksi
-if ($koneksi->connect_error) {
-    die("Koneksi gagal: " . $koneksi->connect_error);
+// Cek koneksi
+if ($connec->connect_error) {
+    die("Koneksi gagal: " . $connec->connect_error);
 }
 ?>

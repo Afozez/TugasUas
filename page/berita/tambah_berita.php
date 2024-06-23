@@ -53,6 +53,16 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 
             <!-- Main Content -->
             <div class="container-form-berita">
+                <?php
+                if (isset($_SESSION['error_message'])) {
+                    echo "<p style='color: red;'>" . $_SESSION['error_message'] . "</p>";
+                    unset($_SESSION['error_message']);
+                }
+                if (isset($_SESSION['success_message'])) {
+                    echo "<p style='color: green;'>" . $_SESSION['success_message'] . "</p>";
+                    unset($_SESSION['success_message']);
+                }
+                ?>
                 <form action="proses_tambah_berita.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
                     <div class="form-group">
                         <label for="judul">Judul</label>

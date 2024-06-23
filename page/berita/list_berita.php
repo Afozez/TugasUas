@@ -91,7 +91,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
               <div class="container-fluid">
               <div class="row mb-2">
                   <div class="col-sm-6">
-                  <h1 class="m-0">Hapus Berita</h1>
+                  <h1 class="m-0">List Berita</h1>
                   </div><!-- /.col -->
               </div><!-- /.row -->
               </div><!-- /.container-fluid -->

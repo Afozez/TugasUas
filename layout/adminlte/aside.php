@@ -51,31 +51,14 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/tugasuas/page/berita/tambah_berita.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-plus nav-icon"></i>
                   <p>Tambah Berita</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/tugasuas/page/berita/list_berita.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Hapus Berita</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Pengguna
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/tugasuas/page/auth/users_list.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Pengguna</p>
+                  <i class="fas fa-list nav-icon"></i>
+                  <p>List Berita</p>
                 </a>
               </li>
             </ul>
